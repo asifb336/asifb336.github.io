@@ -1,0 +1,262 @@
+body {
+    margin: 0;
+    padding: 10px;
+    /* width: 70%; */
+    padding-top: 50px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.og-container {
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+.container{
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.281);
+    border-radius: 25px;
+}
+
+.nav{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 5px;
+    padding: 15px;
+    margin: 5px;
+    box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.281);
+}
+
+.spacing{
+    padding:30px;
+}
+
+
+/* intro */
+.intro{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.intro-abstract{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* padding: 50px; */
+}
+
+.self-btn{
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    background-color: aquamarine;
+    border-radius: 10px;
+    width: 200px;
+}
+
+.intro-detail-nav-container{
+    padding: 20px;
+}
+
+.intro-detail-nav {
+  display: flex;
+  flex-wrap: wrap;        /* Allows items to move to the next line */
+  gap: 12px;              /* Creates the space between the tiles */
+  width: 100%;            /* Fills the parent container */
+  max-width: 400px;       /* Optional: limits the overall size */
+  min-height: 100px;
+  min-width: 200px;
+  box-sizing: border-box;
+}
+
+.intro-detail-nav-btn {
+  /* The Magic Math: (100% / 2) - (gap / 2) */
+  flex: 0 0 calc(50% - 6px); 
+  
+  aspect-ratio: 1 / .4;    /* Ensures each button is a perfect square */
+  background-color: #0078D4;
+  color: white;
+  
+  /* Centering the text inside */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding: 10px;
+}
+/* ------------------ */
+
+
+/* education */
+.ac-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.ac-intro{
+    padding: 20px 50px;
+}
+.ac{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    /* align-items: start;  unnecessary as it controls the entire children alignment*/
+    gap: 20px;
+    padding: 15px 30px;
+    /* margin:50px 20px; */
+    box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.281);
+    border-radius: 60px;
+}
+.ac-detail{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.ac-logo{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.ac-info{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    padding: 10px;
+}
+.ac-initial{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+.ac-degree{
+    font-size: small;
+    background-color: rgb(15, 15, 143);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 15px;
+}
+.ac-school{
+    font-size: x-large;
+    font-weight: bold;
+    margin-bottom: 5px;
+    
+}
+.ac-major{
+    font-size: large;
+    /* padding-top: 10px; */
+    padding-bottom: 10px;
+}
+.ac-year{
+    display: flex;
+    align-items: start;
+    font-weight: bold;
+    font-size: x-large;
+    color: black;
+    padding: 20px;
+}
+
+/* experience */
+.exp-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.exp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.exp-intro{
+    padding: 20px 50px;
+}
+.exp-title{
+    font-size: large;
+    text-align: right;
+    flex: .5;
+}
+.exp-detail{
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* work-experience */
+.exp-work{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    width: 60%;
+    gap: 50px;
+    padding: 15px 30px;
+    border: 1px solid black;
+    border-radius: 25px;
+}
+
+.exp-work-detail{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0px;
+}
+
+.exp-work-details{
+    display: flex;
+    flex: 2;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+}
+
+.exp-logo{ 
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.exp-work-year{
+    flex: .5;
+    justify-content: end;
+}
+
+
+/* research-experience */
+.exp-research{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    gap: 20px;
+    padding: 15px 30px;
+    border-radius: 60px;
+}
+
+.exp-research{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    width: 60%;
+    gap: 50px;
+    padding: 15px 30px;
+    border: 1px solid black;
+    border-radius: 25px;
+}
