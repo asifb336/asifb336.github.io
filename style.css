@@ -203,10 +203,9 @@ body {
     display: flex;
     justify-content: start;
     align-items: start;
-    width: 60%;
+    width: 70%;
     gap: 50px;
     padding: 15px 30px;
-    border: 1px solid black;
     border-radius: 25px;
 }
 
@@ -215,6 +214,9 @@ body {
     flex-direction: row;
     justify-content: space-between;
     gap: 0px;
+    padding: 15px 30px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.12);
+    border-radius: 40px;
 }
 
 .exp-work-details{
@@ -226,12 +228,21 @@ body {
     gap: 10px;
 }
 
-.exp-logo{ 
+.exp-work-logo{ 
     display: flex;
     justify-content: start;
     align-items: center;
     flex-direction: column;
     padding: 10px;
+}
+.exp-work-title{
+    font-size: large;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+.exp-work-company{
+    font-size: medium;
+    margin-bottom: 5px;
 }
 
 .exp-work-year{
@@ -254,9 +265,8 @@ body {
     display: flex;
     justify-content: start;
     align-items: start;
-    width: 60%;
+    width: 70%;
     gap: 50px;
     padding: 15px 30px;
-    border: 1px solid black;
     border-radius: 25px;
 }
