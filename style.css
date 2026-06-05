@@ -270,3 +270,28 @@ body {
     padding: 15px 30px;
     border-radius: 25px;
 }
+
+/* skills */
+.skills{
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    padding: 15px 30px;
+    border-radius: 60px;
+}
+.skills-general, .skills-technical {
+    display: flex;
+    /* flex: 1; */
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.skill-card {
+  display: inline-flex;
+  align-items: center;
+  /* position: relative; */
+  padding: 15px 25px;
+  border-radius: 50px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.08);
+  background: #fff;
+  gap: 24px;
+}
