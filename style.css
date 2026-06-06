@@ -1,3 +1,10 @@
+.container h1,
+.container h2,
+.container h3 {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     margin: 0;
     padding: 10px;
@@ -5,23 +12,19 @@ body {
     padding-top: 50px;
     font-family: 'Roboto', sans-serif;
 }
-
 .og-container {
-    /* display: flex; */
-    justify-content: center;
-    align-items: center;
-    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    padding: 5.2rem; 
     margin: 0 auto;
     border: 1px solid black;
 }
-
 .container{
-    padding: 20px;
+    padding: 5rem;
     margin: 10px;
     box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.281);
     border-radius: 25px;
 }
-
 .nav{
     display: flex;
     flex-wrap: nowrap;
@@ -31,11 +34,9 @@ body {
     margin: 5px;
     box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.281);
 }
-
 .spacing{
     padding:30px;
 }
-
 
 /* intro */
 .intro{
@@ -101,20 +102,24 @@ body {
 .ac-container{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 30px;
+    gap: 3rem;
 }
 .ac-intro{
-    padding: 20px 50px;
+    text-align: center;
+}
+.ac-school-list{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+    gap: 2.5rem;
 }
 .ac{
     display: flex;
     justify-content: space-between;
-    width: 60%;
-    /* align-items: start;  unnecessary as it controls the entire children alignment*/
+    width: 70%;
     gap: 20px;
-    padding: 15px 30px;
-    /* margin:50px 20px; */
+    padding: 15px 50px; 
     box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.281);
     border-radius: 60px;
 }
@@ -136,7 +141,7 @@ body {
     justify-content: start;
     align-items: start;
     flex-direction: column;
-    padding: 10px;
+    padding: .7rem;
 }
 .ac-initial{
     display: flex;
@@ -151,21 +156,21 @@ body {
     border-radius: 15px;
 }
 .ac-school{
-    font-size: x-large;
+    font-size: 1.2rem;
     font-weight: bold;
     margin-bottom: 5px;
     
 }
 .ac-major{
-    font-size: large;
+    font-size: 0.8;
     /* padding-top: 10px; */
     padding-bottom: 10px;
 }
 .ac-year{
     display: flex;
-    align-items: start;
-    font-weight: bold;
-    font-size: x-large;
+    align-items: ce;
+    /* font-weight: bold; */
+    font-size: 1.3rem;
     color: black;
     padding: 20px;
 }
@@ -174,39 +179,49 @@ body {
 .exp-container{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 20px;
+    gap: 2rem;
 }
 .exp{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
+    gap: 0.5rem;
 }
 .exp-intro{
-    padding: 20px 50px;
+    text-align: center;
 }
 .exp-title{
-    font-size: large;
-    text-align: right;
     flex: .5;
+    font-size: normal;
+    font-weight: 500;
+    text-align: left; 
+    padding: .5rem .4rem;
+    /* background-color: #0e4e59fe; */
+    color: rgb(0, 0, 0);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.149);
+    
 }
-.exp-detail{
+.exp-body{
     display: flex;
     flex: 2;
     flex-direction: column;
-    gap: 30px;
+    gap: 1.5rem;
+}
+
+.exp-work-research{
+    flex:1;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    width: 80%;
+    gap: 2rem;
+    padding: 15px 30px;
+    border-radius: 25px;
 }
 
 /* work-experience */
 .exp-work{
-    display: flex;
-    justify-content: start;
-    align-items: start;
-    width: 70%;
-    gap: 50px;
-    padding: 15px 30px;
-    border-radius: 25px;
+    
 }
 
 .exp-work-detail{
@@ -215,6 +230,7 @@ body {
     justify-content: space-between;
     gap: 0px;
     padding: 15px 30px;
+    padding: 1.5rem;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.12);
     border-radius: 40px;
 }
@@ -236,46 +252,89 @@ body {
     padding: 10px;
 }
 .exp-work-title{
-    font-size: large;
+    font-size: 1rem;
     font-weight: bold;
     padding-bottom: 5px;
 }
 .exp-work-company{
-    font-size: medium;
-    margin-bottom: 5px;
+    font-size: 0.9rem;
+    color: rgb(125, 125, 125);
 }
 
 .exp-work-year{
+    align-items: center;
+    justify-content: center;
     flex: .5;
-    justify-content: end;
+    font-size: .85rem;
+    text-align: center; 
 }
 
 
 /* research-experience */
 .exp-research{
-    display: flex;
-    justify-content: space-between;
-    width: 60%;
-    gap: 20px;
-    padding: 15px 30px;
-    border-radius: 60px;
-}
 
-.exp-research{
+}
+.exp-research-body{
     display: flex;
+    flex: 2;
+    flex-direction: row;
     justify-content: start;
     align-items: start;
-    width: 70%;
-    gap: 50px;
-    padding: 15px 30px;
-    border-radius: 25px;
+    gap: 10px;
+    /* padding: 15px 30px; */
+    padding: 2rem;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.12);
+    border-radius: 40px;
+}
+.exp-research-info{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.exp-research-info-footer{
+    display: inline;
+    align-items: start;
+    
+}
+.exp-research-journal{
+    line-height: 1.8;
+    font-size: small;
+    font-weight: 300;
+    color: gray;
+    padding: 0.3rem;
+}
+.exp-research-status{
+    font-size: small;
+    background-color: rgb(15, 143, 79);
+    color: white;
+    padding: 0.2rem 1rem;
+    border-radius: 15px;
+}
+.exp-research-year{
+    align-items: center;
+    justify-content: center;
+    flex: .5;
+    font-size: .9rem;
+    text-align: center; 
 }
 
+
 /* skills */
+.skills-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.skills-intro{
+    text-align: center;
+}
 .skills{
-    /* display: flex; */
-    /* justify-content: space-between; */
-    /* align-items: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
     padding: 15px 30px;
     border-radius: 60px;
 }

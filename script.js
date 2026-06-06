@@ -10,30 +10,32 @@ fetch("data/skills.json")
         return response.json();
     })
     .then(skillsData => {
-        // REMOVED .map() from the end here:
+        // collect General Skills
         const generalSkills = skillsData
             .filter(item => item["skill-tag"] === 'General')
             .sort((a,b) => a["skill-rank"] - b["skill-rank"]);
             
-        // REMOVED .map() from the end here:
+        // collect Technical Skills
         const technicalSkills = skillsData
             .filter(item => item["skill-tag"] === 'Technical')
             .sort((a,b) => a["skill-rank"] - b["skill-rank"]);
         
+        // print General Skills
         generalSkills.forEach(item => {
             const skillCard = `
             <div class="skill-card">
-                <span class="skill-card-ic"><i class="fa-solid fa-${item["skill-alias"]}"></i></span>
+                <span class="skill-card-ic"><i class="fa-${item["skill-alias-fill"]} fa-${item["skill-alias"]}"></i></span>
                 <span class="skill-card-btn">${item["skill"]}</span>
             </div>
             `;
             skills_general.insertAdjacentHTML("beforeend", skillCard);
         });
 
+        // print Technical Skills
         technicalSkills.forEach(item => {
             const skillCard = `
             <div class="skill-card">
-                <span class="skill-card-ic"><i class="fa-solid fa-${item["skill-alias"]}"></i></span>
+                <span class="skill-card-ic"><i class="fa-${item["skill-alias-fill"]} fa-${item["skill-alias"]}"></i></span>
                 <span class="skill-card-btn">${item["skill"]}</span>
             </div>
             `;
