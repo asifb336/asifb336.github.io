@@ -1,8 +1,8 @@
 // Skills populator
 // Reads data from json and populates by categories
 
-const skills_general = document.getElementById('skills-general'); 
-const skills_technical = document.getElementById('skills-technical'); 
+const skills_general = document.getElementById('skills-general-list'); 
+const skills_technical = document.getElementById('skills-technical-list'); 
 
 fetch("data/skills.json")
     .then(response => {
