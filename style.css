@@ -12,6 +12,26 @@ body {
     padding-top: 50px;
     font-family: 'Roboto', sans-serif;
 }
+.font-superheader{
+    font-family: "Epilogue", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.font-header{
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.font-body{
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.font-time{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
 .og-container {
     display: flex;
     flex-direction: column;
@@ -140,35 +160,37 @@ body {
     justify-content: start;
     align-items: start;
     flex-direction: column;
+    gap: 0.5rem;
     padding: .7rem;
-}
-.ac-initial{
-    display: flex;
-    gap: 10px;
-    margin-bottom: 5px;
-}
-.ac-degree{
-    font-size: small;
-    background-color: rgb(15, 15, 143);
-    color: white;
-    padding: 5px 15px;
-    border-radius: 15px;
 }
 .ac-school{
     font-size: 1.2rem;
-    font-weight: bold;
+    font-weight: 400;
     margin-bottom: 5px;
-    
+}
+.ac-footer{   
+    display: inline;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    line-height: 1.3;
+}
+.ac-degree{
+    font-size: 0.8rem;
+    background-color: rgb(26, 101, 167);
+    color: white;
+    padding: .3rem .8rem;
+    border-radius: 15px;
 }
 .ac-major{
-    font-size: 0.8;
-    /* padding-top: 10px; */
-    padding-bottom: 10px;
+    font-style: normal;
+    font-size: 1rem;
+    padding: .3rem .8rem;
 }
 .ac-year{
     display: flex;
-    align-items: ce;
-    /* font-weight: bold; */
+    /* align-items: center; */
+    font-weight: 400;
     font-size: 1.3rem;
     color: black;
     padding: 20px;
@@ -251,8 +273,8 @@ body {
     padding: 10px;
 }
 .exp-work-title{
-    font-size: 1rem;
-    font-weight: bold;
+    font-size: 1.1rem;
+    font-weight: 500;
     padding-bottom: 5px;
 }
 .exp-work-company{
@@ -264,7 +286,8 @@ body {
     align-items: center;
     justify-content: center;
     flex: .5;
-    font-size: .85rem;
+    font-size: .9rem;
+    font-weight: 250;
     text-align: center; 
 }
 
@@ -333,7 +356,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 90%;
+    /* width: 90%; */
     margin: 0 auto;
     gap: 2.5rem;
 }
@@ -342,6 +365,7 @@ body {
     align-items: start;
     justify-content: start;
     flex-direction: row;
+    width: 80%;
     gap: 2.5rem;
 }
 .skills-title{
@@ -361,7 +385,7 @@ body {
     column-gap: 0.7rem;
 }
 .skill-card {
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   font-weight: 400;
   display: inline-flex;
   align-items: center;
@@ -371,3 +395,21 @@ body {
   background: #fff;
   gap: 0.5rem;
 }
+
+
+/* contact */
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.contact-intro{
+    text-align: center;
+}
+.contact-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
